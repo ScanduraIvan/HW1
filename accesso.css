@@ -1,0 +1,119 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image: url(Immagine-Header.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+html{
+    font-size: 20px;
+    font-family:'Varela Round', sans-serif;
+}
+
+#logo {
+    font-size: 1.6rem;
+    font-family: 'Cormorant Unicase', serif;
+    margin-bottom: 20px;
+  }
+  
+#rs-logo {
+    width: 50px;
+  }
+
+input[type=submit]:hover {
+    cursor: pointer;
+  }
+  
+form {
+    text-align: center;
+}
+input[type=text], input[type=password]{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+
+a:visited{
+    color: rgb(29, 41, 206);
+}
+
+a{
+    color: rgb(29, 41, 206);
+}
+
+input[type=submit]
+{
+    width: 100px;
+    height: 30px;
+    font-family:'Varela Round', sans-serif;
+    font-size: 0.7rem;
+}
+
+section.accesso{
+    border:3px solid black;
+    padding:30px;
+    background-color:rgb(245, 245, 245);
+    z-index: 1;
+}
+
+.bottone{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.username{
+    margin-top:10px;
+}
+
+span.error{
+    color:rgb(221, 66, 66);
+    font-size: 0.8rem;
+}
+
+.link1, .link2{
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.link1{
+    margin-bottom: 15px;
+}
+
+.link2{
+    margin-bottom: -15px;
+}
+
+#errore{
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    
+html{
+    font-size: 15px;
+}
+
+input[type=text], input[type=password]{
+    width: 220px;
+    margin-bottom: 20px;
+}
+
+
+}

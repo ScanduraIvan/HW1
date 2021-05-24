@@ -1,0 +1,369 @@
+body {
+    margin: 0;
+    background: rgb(236, 236, 236);
+  }
+
+
+html {
+  font-size: 15px;
+}
+
+
+header {
+  color: white;
+  height: 10.5vh;
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  background-color:rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9vh;
+  z-index: 1;
+}
+
+
+#logo {
+  font-size: 3.5rem;
+  font-family: 'Cormorant Unicase', serif;
+}
+
+
+#rs-logo {
+  width: 50px;
+}
+
+
+a {
+  cursor: pointer;
+  text-decoration:none;
+}
+
+
+.links-button a {
+  margin: 2px;
+  font-size: 1.5rem;
+  padding: 2px 5px;
+  color: white;
+  font-family: 'PT Serif', serif;
+}
+
+
+.links-button a:hover {
+  color: rgb(196, 196, 196);
+  text-decoration: underline;
+}
+
+
+#menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+
+#menu {
+  display: none;
+}
+
+#menu:hover {
+  cursor: pointer;
+}
+
+
+#links-menu{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 90%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 10.5vh;
+  right: 0;
+  z-index: 3;
+}
+
+#links-menu a{
+  color: white;
+  font-size: 3rem;
+  text-decoration: none;
+  font-family: 'PT Serif', serif;
+  margin-bottom: 3vh;
+}
+
+#links-menu a:hover{
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none!important;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+
+#contenuto div.avanti_indietro{
+  width: 5%;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor:pointer;
+  user-select: none;
+}
+
+
+#contenuto div.avanti_indietro:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+#contenuto div{
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 80vh;
+}
+
+
+#contenuto div img.Frecce {
+  width: 80px;
+  height: 80px;
+}
+
+
+.immagine {
+  width: 70%;
+  height: 100%;
+  user-select: none;
+}
+
+
+#news { 
+  display: flex;
+  height: 5vh;
+}
+
+
+marquee {
+  background-color:rgb(26, 24, 25);
+}
+
+
+.notizia {
+  display: flex;
+  align-items:flex-end;
+  margin-right: 150px;
+  font-size: 0.7rem;
+  color:rgb(185, 185, 185);
+  font-family:'Varela Round', sans-serif;
+}
+
+
+.notizia h1{
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+
+
+.notizia a{
+  margin-right: 10px;
+  margin-bottom: 3.5px;
+  font-size: 0.7rem;
+}
+
+
+.notizia a:visited{
+  color:rgb(185, 185, 185);
+}
+
+
+footer {
+  background-color:rgb(26, 24, 25);
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  position: bottom;
+}
+
+
+.font1 {
+  font-size: 1rem;
+  font-family:'Varela Round', sans-serif;
+  color:rgb(143, 42, 67);
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+
+footer p {
+  font-size: 0.9rem;
+  text-align: left;
+  font-family:'Varela Round', sans-serif;
+  color:rgb(138, 138, 138);
+}
+
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 15px;
+}
+
+
+/*Adattamento mobile*/
+
+@media (max-width: 500px) {
+
+  .links-button {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  html {
+    font-size: 10px;
+  }
+
+  #rs-logo {
+    display: none;
+  }
+
+  #logo {
+    font-size: 2rem;
+  }
+
+  #descrizione-buttons {
+    font-size: 1.8rem;
+  }
+
+  footer {
+    height: 32vh;
+  }
+
+  header {
+    height: 10.5vh;
+  }
+
+  #contenuto div{
+    width: 170vw;
+    height: 25vh;
+  }
+
+  #contenuto div img.Frecce {
+    width: 20px;
+    height: 20px;
+  }
+
+  #contenuto{
+    height: 52.5vh;
+  }
+
+  .immagine {
+    width: 90%;
+    height: 25vh;
+  }
+
+  .notizia a{
+    margin-bottom: 2px;
+  }
+  
+}
+
+/*Adattamento Tablet*/
+
+@media (min-width: 501px) and (max-width: 780px){
+
+  .links-button {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  html {
+    font-size: 20px;
+  }
+
+  #rs-logo {
+    display: none;
+  }
+
+  #logo {
+    font-size: 2rem;
+  }
+
+  #descrizione-buttons {
+    font-size: 1.8rem;
+  }
+
+  header {
+    height: 10.5vh;
+  }
+
+  #contenuto div{
+    width: 100vw;
+    height: 40vh;
+  }
+
+  #contenuto{
+    height: 50vh;
+  }
+
+  .immagine {
+    width: 90%;
+  }
+
+  #links-menu a{
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 813px) and (max-width: 1150px){
+
+  .links-button {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  html {
+    font-size: 20px;
+  }
+
+  #rs-logo {
+    display: none;
+  }
+
+  #logo {
+    font-size: 2rem;
+  }
+
+  #links-menu a{
+    font-size: 2rem;
+  }
+}
